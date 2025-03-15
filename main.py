@@ -4,7 +4,7 @@ from classification import evaluate_knn
 from evaluation import plot_roc_curve
 
 if __name__ == "__main__":
-    file_path = "mini_gm_public_v0.1.p"  # Substitua pelo caminho correto
+    file_path = "mini_gm_public_v0.1.p"
     
     print("Carregando os dados...")
     X, y = load_data(file_path)
