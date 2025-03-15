@@ -5,14 +5,14 @@ Este projeto implementa um pipeline para classificar síndromes genéticas com b
 
 ## Estrutura do Projeto
 
-ML_Challenge/
-│── main.py                # Script principal
-│── data_processing.py      # Carregamento e pré-processamento dos dados
-│── visualization.py        # Visualização com t-SNE
-│── classification.py       # Implementação do KNN e métricas
-│── evaluation.py           # Avaliação do modelo e geração de gráficos
-│── requirements.txt        # Dependências do projeto
-│── README.md               # Instruções de uso
+## ML_Challenge/
+## │── main.py                # Script principal
+## │── data_processing.py      # Carregamento e pré-processamento dos dados
+## │── visualization.py        # Visualização com t-SNE
+## │── classification.py       # Implementação do KNN e métricas
+## │── evaluation.py           # Avaliação do modelo e geração de gráficos
+## │── requirements.txt        # Dependências do projeto
+## │── README.md               # Instruções de uso
 
 
 Uso
