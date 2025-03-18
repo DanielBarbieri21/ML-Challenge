@@ -22,6 +22,6 @@ def plot_tsne(X, y):
     plt.show()
 
 if __name__ == "__main__":
-    file_path = "mini_gm_public_v0.1.p"  # Substitua pelo caminho correto
+    file_path = "mini_gm_public_v0.1.p"
     X, y = load_data(file_path)
     plot_tsne(X, y)
