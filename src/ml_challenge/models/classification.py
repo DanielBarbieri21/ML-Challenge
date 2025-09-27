@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.model_selection import cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import f1_score, roc_auc_score, top_k_accuracy_score
-from data_processing import load_data
+from ..utils.data_processing import load_data
 
 def evaluate_knn(X, y, k_range=range(1, 16)):
     """Avalia o KNN usando cross-validation e diferentes métricas."""

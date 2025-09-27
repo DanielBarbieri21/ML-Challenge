@@ -4,7 +4,7 @@ from sklearn.metrics import roc_curve, auc
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import label_binarize
-from data_processing import load_data
+from ..utils.data_processing import load_data
 
 
 def plot_roc_curve(X, y, k):

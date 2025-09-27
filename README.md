@@ -38,6 +38,7 @@ Um pipeline completo e profissional para classificação de síndromes genética
 
 ### Instalação Local
 
+#### Windows (Recomendado)
 ```bash
 # Clone o repositório
 git clone https://github.com/username/ml-challenge.git
@@ -45,9 +46,27 @@ cd ml-challenge
 
 # Crie um ambiente virtual
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# ou
-venv\Scripts\activate     # Windows
+venv\Scripts\activate
+
+# Instale dependências (método 1 - automático)
+python scripts/setup_windows.py
+
+# OU instale manualmente (método 2)
+pip install -r requirements-basic.txt
+
+# Teste a instalação
+python scripts/test_installation.py
+```
+
+#### Linux/Mac
+```bash
+# Clone o repositório
+git clone https://github.com/username/ml-challenge.git
+cd ml-challenge
+
+# Crie um ambiente virtual
+python -m venv venv
+source venv/bin/activate
 
 # Instale as dependências
 pip install -r requirements.txt

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 from sklearn.preprocessing import LabelEncoder
-from data_processing import load_data
+from .data_processing import load_data
 
 def plot_tsne(X, y):
     """Reduz a dimensionalidade dos embeddings para 2D usando t-SNE e plota o gráfico."""

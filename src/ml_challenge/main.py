@@ -1,7 +1,17 @@
-from data_processing import load_data
-from visualization import plot_tsne
-from classification import evaluate_knn
-from evaluation import plot_roc_curve
+"""
+Script principal do ML Challenge.
+"""
+
+import sys
+from pathlib import Path
+
+# Adiciona o diretório src ao PYTHONPATH
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from ml_challenge.utils.data_processing import load_data
+from ml_challenge.utils.visualization import plot_tsne
+from ml_challenge.models.classification import evaluate_knn
+from ml_challenge.models.evaluation import plot_roc_curve
 
 if __name__ == "__main__":
     file_path = "mini_gm_public_v0.1.p"
