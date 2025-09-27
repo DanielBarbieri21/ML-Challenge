@@ -1,0 +1,57 @@
+# Configurações do ML Challenge
+project:
+  name: "ML Challenge - Genetic Syndrome Classification"
+  version: "1.0.0"
+  author: "Daniel Barbieri"
+  email: "dibarbieri21@gmail.com"
+
+# Configurações de dados
+data:
+  input_file: "mini_gm_public_v0.1.p"
+  test_size: 0.2
+  random_state: 42
+  validation_size: 0.1
+
+# Configurações do modelo
+model:
+  algorithm: "knn"
+  k_range: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  metrics: ["euclidean", "cosine"]
+  cv_folds: 10
+  scoring: "accuracy"
+
+# Configurações de visualização
+visualization:
+  tsne:
+    n_components: 2
+    perplexity: 30
+    learning_rate: 200
+    n_iter: 1000
+    random_state: 42
+  
+  plots:
+    figure_size: [10, 8]
+    dpi: 300
+    style: "seaborn-v0_8"
+    color_palette: "tab10"
+
+# Configurações de logging
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} - {message}"
+  file: "logs/ml_challenge.log"
+  rotation: "10 MB"
+  retention: "30 days"
+
+# Configurações de output
+output:
+  results_dir: "results"
+  plots_dir: "results/plots"
+  models_dir: "results/models"
+  logs_dir: "logs"
+  
+# Configurações de performance
+performance:
+  n_jobs: -1
+  memory_limit: "4GB"
+  use_gpu: false

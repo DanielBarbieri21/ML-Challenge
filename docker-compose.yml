@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  ml-challenge:
+    build: .
+    container_name: ml-challenge
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./logs:/app/logs
+    environment:
+      - PYTHONPATH=/app
+    ports:
+      - "8888:8888"  # Jupyter notebook
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+
+  ml-challenge-dev:
+    build: .
+    container_name: ml-challenge-dev
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./logs:/app/logs
+    environment:
+      - PYTHONPATH=/app
+    ports:
+      - "8888:8888"
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+    profiles:
+      - dev
+
+  ml-challenge-test:
+    build: .
+    container_name: ml-challenge-test
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+    command: pytest tests/ -v
+    profiles:
+      - test
