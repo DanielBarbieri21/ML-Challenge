@@ -1,0 +1,25 @@
+# Dependências básicas para ML Challenge
+# Use este arquivo se houver problemas com requirements.txt
+
+# Core ML libraries
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+# Data processing
+pandas
+scipy
+
+# Visualization
+plotly
+
+# Configuration and logging
+pyyaml
+loguru
+
+# Development (opcional)
+pytest
+pytest-cov
+black
+flake8
