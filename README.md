@@ -252,12 +252,19 @@ O pipeline gera automaticamente:
 - Escreva testes para novas funcionalidades
 - Mantenha cobertura de testes > 80%
 
-## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+---
 
-## 👨‍💻 Desenvolvido por:
-IronDev Software. Contato: dibarbieri21@gmail.com | (32) 99118-6728
+🛠️ **Software desenvolvido por Daniel Barbieri**  
+Engenheiro de Software | Full Stack Developer  
+
+Código construído com foco em eficiência, organização, escalabilidade e boas práticas de desenvolvimento.
+
+🌐 GitHub: https://github.com/DanielBarbieri21  
+💼 LinkedIn: https://www.linkedin.com/in/daniel-barbieri-4990462a/
+
+---
+
 
 ## 🙏 Agradecimentos
 
